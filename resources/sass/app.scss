@@ -104,6 +104,118 @@ header {
     }
 }
 
+// Home-Page Main
+// Sezione card comics
+div.comics {
+    display: flex;
+    flex-direction: column;
+
+    .ms-container {
+        flex-direction: column;
+    }
+
+    #content-main {
+        width: 100%;
+        background-color: #1c1c1c;
+        padding: 20px 0;
+
+        .title-comics {
+            width: max-content;
+            color: #fff;
+            font-size: 16px;
+            padding: 16px 20px;
+            background-color: #0282f9;
+            position: relative;
+            top: -50px;
+            left: 0;
+        }
+
+        .cards-comics {
+            display: flex;
+            flex-wrap: wrap;
+
+            .card {
+                display: flex;
+                flex-direction: column;
+                width: calc(100% / 6 - 40px);
+                cursor: pointer;
+                margin: 0 25px 50px 15px;
+                
+                img {
+                    width: 100%;
+                    height: 175px;
+                    object-fit: cover;
+                    object-position: top;
+                }
+            
+                span {
+                    color: #fff;
+                    margin-top: 20px;
+                    font-size: 13px;
+                }
+            }
+        }
+
+        .more-cards {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            a {
+                text-decoration: none;
+                color: #fff;
+                padding: 15px 65px;
+                font-weight: 600;
+                font-size: 14px;
+                background-color: #0282f9;
+            }
+        }
+    }
+}
+
+// Sezione icons-main
+#icons-main {
+    padding: 50px 0;
+    width: 100%;
+    background-color: #0282f9;
+
+    nav {
+
+        ul {
+            display: flex;
+            list-style: none;
+
+            li {
+                margin: 0 29px;
+
+                a {
+                    display: flex;
+                    align-items: center;
+                    text-decoration: none;
+                    color: #fff;
+                    font-size: 14px;
+
+                    img {
+                        width: 55px;
+                        height: 65px;
+                    }
+
+                    span {
+                        margin-left: 15px;
+                    }
+                }
+            }
+
+            li:nth-child(4) {
+                img {
+                    width: 45px;
+                }
+            }
+        }
+    }
+}
+
+
 // Footer
 footer {
     display: flex;
