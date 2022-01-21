@@ -103,3 +103,129 @@ header {
         }
     }
 }
+
+// Footer
+footer {
+    display: flex;
+    flex-direction: column;
+
+    #comics-footer {
+        height: 450px;
+        background-image: url('https://www.dccomics.com/sites/all/themes/dc_comics_bp/images/footer-bg.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow: hidden;
+
+        .nav-footer {
+            display: flex;
+            flex-wrap: wrap;
+            width: 55%;
+            padding: 20px 0;
+
+            & div {
+                margin-right: 30px;
+            }
+
+            h3 {
+                color: white;
+                margin: 20px 0 20px;
+                font-size: 18px;
+            }
+
+            ul {
+                list-style: none;
+
+                li {
+                    margin: 5px 0;
+
+                    & a {
+                        text-decoration: none;
+                        color: #959595;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+
+        .cookies-settings-text {
+            width: 100%;
+            color: #959595;
+            font-size: 14px;
+            margin: 0 0 150px 0;
+
+            span {
+                color: #1373cc;
+            }
+        }
+
+        .logo-footer {
+            display: flex;
+            justify-content: flex-end;
+            width: 50%;
+            position: relative;
+            top: -75px;
+            left: 0;
+
+            img {
+                filter: opacity(0.5);
+                transform: rotate(-25deg);
+            }
+        }
+    }
+
+    #social-footer {
+        width: 100%;
+        background-color: #303030;
+        padding: 20px 0;
+
+        .btn-signup {
+            display: flex;
+            align-items: center;
+            width: 50%;
+
+            a {
+                text-decoration: none;
+                color: #fff;
+                border: 2px solid #1068ba;
+                padding: 10px 13px;
+            }
+        }
+
+        .socials {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            width: 50%;
+
+            span {
+                color: #0282f9;
+                font-weight: 600;
+                margin-right: 20px;
+            }
+
+            ul {
+                list-style: none;
+
+                & li {
+                    display: inline-block;
+                    margin: 0 10px;
+
+                    a {
+                        
+                        img {
+                            width: 30px;
+
+                            &.icon-youtube {
+                                width: 40px;
+                            }
+
+                            &.icon-pinterest {
+                                width: 32px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -101,3 +101,125 @@ header .jumbotron-comics img {
      object-position: center;
 }
 
+footer {
+  display: flex;
+  flex-direction: column;
+}
+
+footer #comics-footer {
+  height: 450px;
+  background-image: url("https://www.dccomics.com/sites/all/themes/dc_comics_bp/images/footer-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+footer #comics-footer .nav-footer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 55%;
+  padding: 20px 0;
+}
+
+footer #comics-footer .nav-footer div {
+  margin-right: 30px;
+}
+
+footer #comics-footer .nav-footer h3 {
+  color: white;
+  margin: 20px 0 20px;
+  font-size: 18px;
+}
+
+footer #comics-footer .nav-footer ul {
+  list-style: none;
+}
+
+footer #comics-footer .nav-footer ul li {
+  margin: 5px 0;
+}
+
+footer #comics-footer .nav-footer ul li a {
+  text-decoration: none;
+  color: #959595;
+  font-size: 14px;
+}
+
+footer #comics-footer .cookies-settings-text {
+  width: 100%;
+  color: #959595;
+  font-size: 14px;
+  margin: 0 0 150px 0;
+}
+
+footer #comics-footer .cookies-settings-text span {
+  color: #1373cc;
+}
+
+footer #comics-footer .logo-footer {
+  display: flex;
+  justify-content: flex-end;
+  width: 50%;
+  position: relative;
+  top: -75px;
+  left: 0;
+}
+
+footer #comics-footer .logo-footer img {
+  filter: opacity(0.5);
+  transform: rotate(-25deg);
+}
+
+footer #social-footer {
+  width: 100%;
+  background-color: #303030;
+  padding: 20px 0;
+}
+
+footer #social-footer .btn-signup {
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+
+footer #social-footer .btn-signup a {
+  text-decoration: none;
+  color: #fff;
+  border: 2px solid #1068ba;
+  padding: 10px 13px;
+}
+
+footer #social-footer .socials {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 50%;
+}
+
+footer #social-footer .socials span {
+  color: #0282f9;
+  font-weight: 600;
+  margin-right: 20px;
+}
+
+footer #social-footer .socials ul {
+  list-style: none;
+}
+
+footer #social-footer .socials ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+footer #social-footer .socials ul li a img {
+  width: 30px;
+}
+
+footer #social-footer .socials ul li a img.icon-youtube {
+  width: 40px;
+}
+
+footer #social-footer .socials ul li a img.icon-pinterest {
+  width: 32px;
+}
+
