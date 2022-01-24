@@ -167,27 +167,27 @@
                 <ul>
                     <li>
                         <a href="#">
-                            <img src="https://www.uniba.it/ricerca/dipartimenti/farmacia/facebook/image" alt="icon facebook">
+                            <img src="{{ asset('storage/asset/footer-facebook.png') }}" alt="icon facebook">
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <img src="https://www.freepnglogos.com/uploads/twitter-logo-png/twitter-logo-vector-png-clipart-1.png" alt="icon twitter">
+                            <img src="{{ asset('storage/asset/footer-twitter.png') }}" alt="icon twitter">
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <img src="http://nazionale.autonomidipolizia.it/wp-content/uploads/2019/05/youtube.png" class="icon-youtube" alt="icon youtube">
+                            <img src="{{ asset('storage/asset/footer-youtube.png') }}" class="icon-youtube" alt="icon youtube">
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <img src="https://www.isnotdown.com/assets/pics/pinterest.png" class="icon-pinterest" alt="icon pinterest">
+                            <img src="{{ asset('storage/asset/footer-pinterest.png') }}" class="icon-pinterest" alt="icon pinterest">
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <img src="https://www.iconpacks.net/icons/2/free-periscope-logo-icon-2441-thumb.png" alt="icon periscope">
+                            <img src="{{ asset('storage/asset/footer-periscope.png') }}" alt="icon periscope">
                         </a>
                     </li>
                 </ul>

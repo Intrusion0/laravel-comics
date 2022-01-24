@@ -49,7 +49,7 @@ header {
                     &.active {
                         color: #2c89f9;
                         border-bottom: 7px solid #2c89f9;
-                        padding-bottom: 48px;
+                        padding-bottom: 50px;
                     }
                     
                     &.search {
@@ -99,7 +99,7 @@ header {
             width: 100%;
             height: 400px;
             object-fit: cover;
-            object-position: center;
+            object-position: top;
         }
     }
 }
@@ -140,18 +140,22 @@ div.comics {
                 width: calc(100% / 6 - 40px);
                 cursor: pointer;
                 margin: 0 25px 50px 15px;
+
+                a {
+                    text-decoration: none;
+
+                    img {
+                        width: 100%;
+                        height: 175px;
+                        object-fit: cover;
+                        object-position: top;
+                        margin-bottom: 15px;
+                    }
                 
-                img {
-                    width: 100%;
-                    height: 175px;
-                    object-fit: cover;
-                    object-position: top;
-                }
-            
-                span {
-                    color: #fff;
-                    margin-top: 20px;
-                    font-size: 13px;
+                    span {
+                        color: #fff;
+                        font-size: 13px;
+                    }
                 }
             }
         }
@@ -223,7 +227,7 @@ footer {
 
     #comics-footer {
         height: 450px;
-        background-image: url('https://www.dccomics.com/sites/all/themes/dc_comics_bp/images/footer-bg.jpg');
+        background-image: url('/storage/asset/footer-bg.jpg');
         background-repeat: no-repeat;
         background-size: cover;
         overflow: hidden;
@@ -326,17 +330,191 @@ footer {
                         
                         img {
                             width: 30px;
-
-                            &.icon-youtube {
-                                width: 40px;
-                            }
-
-                            &.icon-pinterest {
-                                width: 32px;
-                            }
                         }
                     }
                 }
+            }
+        }
+    }
+}
+
+// Action-comics PAGE
+.ms-container-comic {
+    display: flex;
+    width: 53%;
+    margin: 0 auto;
+}
+
+div.container-comic {
+    width: auto;
+
+    .blue-bar {
+        width: 100%;
+        height: 80px;
+        background-color: #0182F9;
+
+        .container-img {
+            width: 194px;
+            height: 293px;
+            position: relative;
+            bottom: 230px;
+            left: 0;
+            border: 1px solid #fff;
+
+            div {
+                position: absolute;
+                top: 0;
+                left: 0;
+                background: #00a9d9;
+                color: #fff;
+                padding: 3px 5px;
+                font-size: 13px;
+                
+                &:last-child {
+                    width: 100%;
+                    top: auto;
+                    bottom: 0;
+                    left: 0;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    // Sezione descrizione comic
+    .description-comic {
+        width: 100%;
+        padding: 20px 0;
+        background-color: #fff;
+
+        .container-description {
+            width: 75%;
+            padding: 50px 0;
+
+            h2 {
+                color: #003f5e;
+                font-size: 26px;
+            }
+
+            .price-availability {
+                display: flex;
+                margin: 20px 0;
+                background-color: #55ba59;
+                color: #bafd8d;
+                font-weight: 500;
+                min-height: 45px;
+                border-bottom: 1px solid #000;
+
+                div {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 70%;
+                    margin-left: 20px;
+
+                    span {
+
+                        span {
+                            color: #fff;
+                        }
+                    }
+
+                    &:last-child {
+                        justify-content: center;
+                        width: 30%;
+                        border-left: 1px solid #000;
+                        color: #fff;
+                    }
+                }
+            }
+
+            div.text-description {
+                color: #555555;
+                line-height: 25px;
+                font-size: 16px;
+            }
+        }
+        
+        .container-advertisement {
+            width: 25%;
+            margin: 20px 0 0 35px;
+            padding: 20px 0 0 0;
+
+            h3 {
+                font-size: 16px;
+                text-align: right;
+                margin-bottom: 5px;
+                color: gray;
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    // Sezione info comic
+    .info-comic {
+        width: 100%;
+        padding: 30px 0 120px;
+        background-color: #f6f6f6;
+        border: 1px solid #e6e6e6;
+
+        div.specs {
+            margin-left: 50px;
+        }
+
+        div.talent, div.specs {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+
+            h4 {
+                font-size: 24px;
+                color: #003f5e;
+                border-bottom: 1px solid #e1e0e0;
+                padding-bottom: 25px;
+            }
+        }
+
+        .art, .written, .series, .price, .sale-date {
+            display: flex;
+            border-bottom: 1px solid #e1e0e0;
+            padding: 10px 0;
+
+            div:first-child {
+                width: 30%;
+                color: #003f5e;
+            }
+
+            div:last-child {
+                width: 70%;
+            }
+
+            span {
+                color: #00a9d9;
+            }
+        }
+    }
+}
+
+// Sezione info dc-comic
+#info-dc-comic {
+    width: 100%;
+    display: flex;
+    background-color: #f6f6f6;
+
+    div.ms-container-comic {
+
+        div {
+            display: flex;
+            min-height: 75px;
+            justify-content: space-between;
+            border: 1px solid #e6e6e6;
+            padding: 10px 113px 0 10px;
+
+            span {
+                color: gray;
             }
         }
     }

@@ -11,7 +11,9 @@
     </div>
     <div class="ms-container">
         <section id="logo-header">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/DC_Comics_logo.svg/1200px-DC_Comics_logo.svg.png" alt="dc logo">
+            <a href="{{ route('home') }}">
+                <img src="{{ asset('storage/asset/dc-logo.png') }}" alt="dc logo">
+            </a>
         </section>
         <nav>
             <ul>
@@ -76,6 +78,6 @@
         </nav>
     </div>
     <div class="jumbotron-comics">
-        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/30d771104652791.5f681e77ac1ac.jpg" alt="jumbotron comics">
+        <img src="{{ asset('storage/asset/jumbotron.jpg') }}" alt="jumbotron comics">
     </div>
 </header>
