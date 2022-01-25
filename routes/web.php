@@ -2,10 +2,6 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('pages.home');
-})->name('home');
+Route::get('/', 'HomeController@home')->name('home');
 
-Route::get('actionComics', function () {
-    return view('pages.action-comics');
-})->name('actionComics');
+Route::get('actionComics', 'HomeController@actionComics')->name('actionComics');
